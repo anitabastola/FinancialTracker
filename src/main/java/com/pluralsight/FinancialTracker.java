@@ -1,17 +1,12 @@
 package com.pluralsight;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//import static FinancialTracker.DATE_FORMATTER;
-//import static FinancialTracker.DATE_FORMATTER;
 
 public class FinancialTracker {
 
@@ -105,30 +100,30 @@ public class FinancialTracker {
         System.out.println("Please enter the vendor: ");
         String vendor = scanner.nextLine();
         System.out.println("Please enter your deposit amount: ");
-        double depositAmount = scanner.nextDouble();
-
-
-        try {
-            if (depositAmount <= 0) {
-
-                System.out.println("amount should be a positive number ");
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("invalid amount format. Please enter the valid number ");
+        double depositAmount = Double.parseDouble(scanner.nextLine());
+        if (depositAmount <= 0) {
+            System.out.println("Invalid amount, Please try again");
             return;
         }
 
+
+
         Transaction deposit = new Transaction(dateString, time, type , vendor, depositAmount);
         transactions.add(deposit);
+        System.out.println("The deposit is added successfully");
 
-        FileWriter writer = null;
+
         try {
-            writer = new FileWriter(FILE_NAME, true);
+
+           BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true));
             writer.write(dateString.toString()+"|"+timeString.toString()+"|"+type+"|"+vendor+"|"+depositAmount);
+            writer.newLine();
             writer.close();
         } catch (Exception e) {
             System.out.println("Please enter again, invalid!" );
+
         }
+
 
     }
 
@@ -153,9 +148,26 @@ public class FinancialTracker {
         String vendor = scanner.nextLine();
         System.out.println("Please enter your deposit amount: ");
         double paymentAmount = scanner.nextDouble();
-        paymentAmount = -paymentAmount;
+        if (paymentAmount >= 0) {
+            System.out.println("Invalid amount, Please try again");
+            return;
+        }
+        paymentAmount *= -1;
+
         Transaction payment = (new Transaction(dateString, time, type, vendor, paymentAmount));
         transactions.add(payment);
+        System.out.println("The payment is added successfully");
+
+
+        try {
+
+            BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true));
+            writer.write(dateString.toString() + "|" + timeString.toString() + "|" + type + "|" + vendor + "|" + paymentAmount);
+            writer.newLine();
+            writer.close();
+        } catch (Exception e) {
+            System.out.println("Please enter again, invalid!");
+        }
     }
 
 
@@ -209,12 +221,21 @@ public class FinancialTracker {
     private static void displayDeposits() {
         // This method should display a table of all deposits in the `transactions` ArrayList.
         // The table should have columns for date, time, vendor, and amount.
+        System.out.println("deposits in all the lists");
+        for (Transaction transac : transactions) {
+            System.out.println(transac.getDate() + "|" + transac.getTime() + "|" + transac.getType() + "|" + transac.getVendor() + "|" + transac.getAmount() + "|");
+        }
 
     }
+
 
     private static void displayPayments() {
         // This method should display a table of all payments in the `transactions` ArrayList.
         // The table should have columns for date, time, vendor, and amount.
+        System.out.println("payment in all the lists");
+        for (Transaction transac : transactions) {
+            System.out.println(transac.getDate() + "|" + transac.getTime() + "|" + transac.getType() + "|" + transac.getVendor() + "|" + transac.getAmount() + "|");
+        }
     }
 
     private static void reportsMenu(Scanner scanner) {
