@@ -3,7 +3,7 @@ package com.pluralsight;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class Transactions {
+public class Transaction {
 
 
     private LocalDate date;
@@ -12,7 +12,7 @@ public class Transactions {
     private String vendor;
     private double amount;
 
-    public Transactions(LocalDate date, LocalTime time,  String type, String vendor, double amount) {
+    public Transaction(LocalDate date, LocalTime time,  String type, String vendor, double amount) {
         this.date = date;
         this.time = time;
         this.type = type;
