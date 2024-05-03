@@ -2,21 +2,21 @@
 
 ## Description of the Project
 
-Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
+ This Java application uses Command Line Interface to track the finances for individuals and businesses.It can give users to access view, and add deposits and payments to manage their transactions financially. The main function of this is to manage your transactions by viewing them and adding new records. 
 
 ![Class Diagram](path/to/your/class_diagram.png)
 
 ## User Stories
-
-List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
 
 - As a user, I want to be able to input my data, so that the application can process it accordingly.
 - As a user, I want to receive immediate feedback, so I can understand what to do next.
 
 ## Setup
 
-Instructions on how to set up and run the project using IntelliJ IDEA.
+- First, you need to download IntelliJ IDEA. Open the IntelliJ program after it is finished downloading. Now, you will need to click on new file, new, project and make sure you click on Java to have the right language opened. 
+- Then you wil have to set your project making sure you are using Mavern 17 correto and your grouped ID as com.pluralsight and titling your projec with a capital letter.
 
+### Prerequisites
 ### Prerequisites
 
 - IntelliJ IDEA: Ensure you have IntelliJ IDEA installed, which you can download from [here](https://www.jetbrains.com/idea/download/).
@@ -34,8 +34,8 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Technologies Used
 
-- Java: Mention the version you are using.
-- Any additional libraries or frameworks used in the project.
+-  I'm using the Java JDK- Coretto 17
+- GitHub
 
 ## Demo
 ![Screenshot 2024-05-03 084650](https://github.com/anitabastola/FinancialTracker/assets/166552121/10ba3619-8073-464f-855a-7f77c9239121)
@@ -60,24 +60,20 @@ Include screenshots or GIFs that show your application in action. Use tools like
 
 Outline potential future enhancements or functionalities you might consider adding:
 
-- Additional feature to be developed.
-- Improvement of current functionalities.
+-  A way to see the transactions in category from most spent to least. (graph, statistics)
 
 ## Resources
 
 List resources such as tutorials, articles, or documentation that helped you during the project.
 
-- [Java Programming Tutorial](https://www.example.com)
-- [Effective Java](https://www.example.com)
+-  https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html
+- http://www.java2s.com/ref/java/java-datetimeformatter-patterns.html
+- https://app.schoology.com/course/7241485878/materials/gp/7241486036
 
-## Team Members
 
-- **Name 1** - Specific contributions or roles.
-- **Name 2** - Specific contributions or roles.
 
 ## Thanks
-
-Express gratitude towards those who provided help, guidance, or resources:
-
-- Thank you to [Mentor's Name] for continuous support and guidance.
-- A special thanks to all teammates for their dedication and teamwork.
+- I would like to show my thanks to Hussain for helping me understand the goal of the project.
+- I would also like to thank our instructor Raymond for being our biggest supporter throughout the week. He has been very helpful and dedicating extra time to help students with what they need. 
+- Resources include our previous exercises, the workbook with examples, and in class demos were very useful in the capstones.
+.I would like to thank everybody for working hard on this capstones and not giving up when facing an issue. You all have done wonderful work and I hope to see the same dedication throughout our program.
