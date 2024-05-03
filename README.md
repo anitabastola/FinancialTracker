@@ -38,6 +38,19 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - Any additional libraries or frameworks used in the project.
 
 ## Demo
+![Screenshot 2024-05-03 084650](https://github.com/anitabastola/FinancialTracker/assets/166552121/10ba3619-8073-464f-855a-7f77c9239121)
+![Screenshot 2024-05-03 084904](https://github.com/anitabastola/FinancialTracker/assets/166552121/3bdecd7a-70c6-4faa-81bd-9b278a88eb71)
+![Screenshot 2024-05-03 084919](https://github.com/anitabastola/FinancialTracker/assets/166552121/76191066-0efe-45bb-9eb5-e934600a3e1e)
+![Screenshot 2024-05-03 084929](https://github.com/anitabastola/FinancialTracker/assets/166552121/af600c15-c431-4dc9-ad39-3e931e5df2a9)
+![Screenshot 2024-05-03 084954](https://github.com/anitabastola/FinancialTracker/assets/166552121/e877840f-8ddc-4aed-afbd-8c3cdef6df08)
+![Screenshot 2024-05-03 085003](https://github.com/anitabastola/FinancialTracker/assets/166552121/0241a528-![Screenshot 2024-05-03 085011](https://github.com/anitabastola/FinancialTracker/assets/166552121/afed1b72-8f69-4b20-b882-8f1eae2c71e6)
+6dc9-4f9e-9066-a2ea946ee278)
+![Screenshot 2024-05-03 085017](https://github.com/anitabastola/FinancialTracker/assets/166552121/2e164354-dcf5-40a6-9a42-61007c0dbbff)
+![Screenshot 2024-05-03 085024](https://github.com/anitabastola/FinancialTracker/assets/166552121/9850ca4b-ba6f-4266-94c1-8cfb097f021c)
+![Screenshot 2024-05-03 085032](https://github.com/anitabastola/FinancialTracker/assets/166552121/6a421ebd-2605-403a-beb2-4b83238ba980)
+
+
+
 
 Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
 
